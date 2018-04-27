@@ -1,0 +1,108 @@
+.container
+    nav.header__menu
+        mixin list(data)
+            ul.header__list
+                each item in data.items
+                    li(class= item.class)
+                        a.header__link(href= item.href) #{item.text}
+                        if item.sublevel
+                            +list(item)
+        -
+            var data = {
+                'title': 'title text',
+                'items': [{
+                    href: '#',
+                    text: 'Search tickets',
+                    class: 'header__item'
+                }, {
+                    href: '#',
+                    text: 'Sapsan',
+                    class: 'header__item'
+                }, {
+                    href: '#',
+                    text: 'Allegro',
+                    class: 'header__item'
+                }, {
+                    href: '#',
+                    text: 'Trans-siberian',
+                    class: 'header__item header__item_root',
+                    sublevel: true,
+                    items: [{
+                        href: '#',
+                        text: 'Child policy',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Change ticket request',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Cancel tickets',
+                        class: 'header__item header__item_subitem'
+                    }]
+                },{
+                    href: '#',
+                    text: 'FAQ',
+                    sublevel: true,
+                    class: 'header__item header__item_root',
+                    items: [{
+                        href: '#',
+                        text: 'Child policy',
+                        class: 'header__item header__item_subitem'
+                },{
+                        href: '#',
+                        text: 'Cancel tickets',
+                        class: 'header__item header__item_subitem'
+                    }]
+                }, {
+                    href: '#',
+                    text: 'Tickets guide',
+                    sublevel: true,
+                    class: 'header__item header__item_root',
+                    items: [{
+                        href: '#',
+                        text: 'Group travel',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Ticket types',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Child policy',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Change ticket request',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Cancel tickets',
+                        class: 'header__item header__item_subitem'
+                    }]
+                }, {
+                    href: '#',
+                    text: 'Contact us',
+                    sublevel: true,
+                    class: 'header__item header__item_root',
+                    items: [{
+                        href: '#',
+                        text: 'Child policy',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Change ticket request',
+                        class: 'header__item header__item_subitem'
+                }, {
+                        href: '#',
+                        text: 'Cancel tickets',
+                        class: 'header__item header__item_subitem'
+                    }]
+                }]
+            }
+        +list(data)
+    a.header__sign-in(href='#') Sign in
+    .burger-icon
+        .burger-icon__line-1
+        .burger-icon__line-2
+        .burger-icon__line-3

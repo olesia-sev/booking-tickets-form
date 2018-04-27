@@ -1,0 +1,26 @@
+/*resolutions*/
+$desktop: 1200px;
+$laptop: 960px;
+$tablets: 768px;
+$phones480: 480px;
+$phones: 320px;
+
+/*colors*/
+$lightblue: #54add8;
+$blue: #0085c5;
+$orange-gradient: linear-gradient(to bottom, #faad49, #f76104);
+$border-orange: #de5300;
+$hover-orange: #f75c00;
+$grey: #a9a9a9;
+
+@import 'normalize';
+@import '_misc/fonts';
+@import '_misc/mixins';
+@import 'common/global';
+@import 'common/header';
+@import 'common/main-content';
+@import 'common/form';
+@import 'common/autocomplete';
+@import 'common/burger-menu';
+@import 'common/burger-icon';
+@import 'common/style-ie10';

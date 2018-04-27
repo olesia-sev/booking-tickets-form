@@ -1,0 +1,24 @@
+{
+  "name": "hotels-ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.7",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "node-normalize-scss": "^3.0.0"
+  },
+  "dependencies": {
+    "air-datepicker": "^2.2.3"
+  }
+}

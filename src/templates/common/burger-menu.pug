@@ -1,0 +1,102 @@
+nav.burger-menu
+    mixin list(data)
+        ul.burger-menu__list
+            each item in data.items
+                li(class= item.class)
+                    a.burger-menu__link(href= item.href) #{item.text}
+                    if item.sublevel
+                        +list(item)
+    -
+        var data = {
+            'title': 'title text',
+            'items': [{
+                href: '#',
+                text: 'Search tickets',
+                class: 'burger-menu__item'
+            }, {
+                href: '#',
+                text: 'Sapsan',
+                class: 'burger-menu__item'
+            }, {
+                href: '#',
+                text: 'Allegro',
+                class: 'burger-menu__item'
+            }, {
+                href: '#',
+                text: 'Trans-siberian',
+                class: 'burger-menu__item burger-menu__item_root',
+                sublevel: true,
+                items: [{
+                    href: '#',
+                    text: 'Child policy',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Change ticket request',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Cancel tickets',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }]
+            },{
+                href: '#',
+                text: 'FAQ',
+                sublevel: true,
+                class: 'burger-menu__item burger-menu__item_root',
+                items: [{
+                    href: '#',
+                    text: 'Child policy',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                },{
+                    href: '#',
+                    text: 'Cancel tickets',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }]
+            }, {
+                href: '#',
+                text: 'Tickets guide',
+                sublevel: true,
+                class: 'burger-menu__item burger-menu__item_root',
+                items: [{
+                    href: '#',
+                    text: 'Group travel',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Ticket types',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Child policy',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Change ticket request',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Cancel tickets',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }]
+            }, {
+                href: '#',
+                text: 'Contact us',
+                sublevel: true,
+                class: 'burger-menu__item burger-menu__item_root',
+                items: [{
+                    href: '#',
+                    text: 'Child policy',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Change ticket request',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }, {
+                    href: '#',
+                    text: 'Cancel tickets',
+                    class: 'burger-menu__item burger-menu__item_subitem'
+                }]
+            }]
+        }
+    +list(data)

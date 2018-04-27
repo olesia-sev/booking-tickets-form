@@ -1,0 +1,13 @@
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .form__row--second {
+        @include tablets {
+            align-items: center;
+        }
+    }
+
+    .header__sign-in:before {
+        display: none;
+    }
+}

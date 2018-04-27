@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Tickets</title>
+    <link rel="stylesheet" href="assets/scripts/air-datepicker-master/datepicker.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"/>
+    <link rel="stylesheet" href="assets/styles/main.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="header__menu">
+                        <ul class="header__list">
+                          <li class="header__item"><a class="header__link" href="#">Search tickets</a>
+                          </li>
+                          <li class="header__item"><a class="header__link" href="#">Sapsan</a>
+                          </li>
+                          <li class="header__item"><a class="header__link" href="#">Allegro</a>
+                          </li>
+                          <li class="header__item header__item_root"><a class="header__link" href="#">Trans-siberian</a>
+                                        <ul class="header__list">
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Child policy</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Change ticket request</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Cancel tickets</a>
+                                          </li>
+                                        </ul>
+                          </li>
+                          <li class="header__item header__item_root"><a class="header__link" href="#">FAQ</a>
+                                        <ul class="header__list">
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Child policy</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Cancel tickets</a>
+                                          </li>
+                                        </ul>
+                          </li>
+                          <li class="header__item header__item_root"><a class="header__link" href="#">Tickets guide</a>
+                                        <ul class="header__list">
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Group travel</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Ticket types</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Child policy</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Change ticket request</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Cancel tickets</a>
+                                          </li>
+                                        </ul>
+                          </li>
+                          <li class="header__item header__item_root"><a class="header__link" href="#">Contact us</a>
+                                        <ul class="header__list">
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Child policy</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Change ticket request</a>
+                                          </li>
+                                          <li class="header__item header__item_subitem"><a class="header__link" href="#">Cancel tickets</a>
+                                          </li>
+                                        </ul>
+                          </li>
+                        </ul>
+          </nav><a class="header__sign-in" href="#">Sign in</a>
+          <div class="burger-icon">
+            <div class="burger-icon__line-1"></div>
+            <div class="burger-icon__line-2"></div>
+            <div class="burger-icon__line-3"></div>
+          </div>
+        </div>
+      </header>
+      <!--end of header-->
+      <main class="main">
+        <div class="container">
+          <form class="form">
+            <div class="form__title-wrap">
+              <h1 class="form__title">Russian Train Tickets</h1>
+            </div>
+            <div class="form__row form__row--first">
+              <label class="form__label" for="departure-city">
+                <div class="form__text">Departure city:</div>
+                <input class="form__input js-autocomplete" id="departure-city" type="text" placeholder="Type city name" name="departure city"/>
+                <div class="form__example">
+                  <p>Ex:&nbsp;<span class="form__example-city js-fast-input" data-value="St. Petersburg" data-target="#departure-city">St. Petersburg,&nbsp;</span><span class="form__example-city js-fast-input" data-value="Moscow" data-target="#departure-city">Moscow</span></p>
+                </div>
+              </label>
+              <div class="form__arrows js-form__arrows" role="button" aria-label="Switch" title="Switch"></div>
+              <label class="form__label" for="arrival-city">
+                <div class="form__text">Arrival city:</div>
+                <input class="form__input js-autocomplete" id="arrival-city" type="text" placeholder="Type city name" name="arrival city"/>
+                <div class="form__example">
+                  <p>Ex:&nbsp;<span class="form__example-city js-fast-input" role="button" aria-label="Fast input" data-value="St. Petersburg" data-target="#arrival-city">St. Petersburg,&nbsp;</span><span class="form__example-city js-fast-input" role="button" aria-label="Fast input" data-value="Moscow" data-target="#arrival-city">Moscow</span></p>
+                </div>
+              </label>
+            </div>
+            <div class="form__row form__row--second">
+              <label class="form__label" for="departure-date">
+                <div class="form__text">Departure date:</div>
+                <div class="form__input-wrap">
+                  <input class="form__input form__input--date js-datepicker-here" id="departure-date" type="text" placeholder="dd.mm.yyyy" readonly="readonly"/>
+                </div>
+              </label>
+              <label class="form__label form__label-checkbox" for="roundtrip">
+                <input class="form__input-checkbox" id="roundtrip" type="checkbox"/>
+                <div class="form__input-checkbox--fake js-roundtrip"></div>
+                <div class="form__text-inner js-roundtrip">Roundtrip</div>
+              </label>
+              <label class="form__label" for="return-date">
+                <div class="form__text">Return date:</div>
+                <div class="form__input-wrap">
+                  <input class="form__input form__input--date inactive js-datepicker-here" id="return-date" type="text" placeholder="dd.mm.yyyy" readonly="readonly" disabled="disabled"/>
+                </div>
+              </label>
+              <label class="form__label" for="currency">
+                <div class="form__text">Currency</div>
+                <select class="form__select js-select" id="currency" name="currency">
+                  <option value="USD">USD</option>
+                  <option value="RUB" selected="selected">RUB</option>
+                  <option value="GBR">GBR</option>
+                  <option value="EUR">EUR</option>
+                  <option value="CHF">CHF</option>
+                </select>
+              </label>
+              <button class="form__search" type="submit"><span class="form__search-text">Search</span></button>
+            </div>
+          </form>
+        </div>
+      </main>
+      <!--end of main-->
+      <div class="burger-menu-wrap">
+        <nav class="burger-menu">
+                    <ul class="burger-menu__list">
+                      <li class="burger-menu__item"><a class="burger-menu__link" href="#">Search tickets</a>
+                      </li>
+                      <li class="burger-menu__item"><a class="burger-menu__link" href="#">Sapsan</a>
+                      </li>
+                      <li class="burger-menu__item"><a class="burger-menu__link" href="#">Allegro</a>
+                      </li>
+                      <li class="burger-menu__item burger-menu__item_root"><a class="burger-menu__link" href="#">Trans-siberian</a>
+                                  <ul class="burger-menu__list">
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Child policy</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Change ticket request</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Cancel tickets</a>
+                                    </li>
+                                  </ul>
+                      </li>
+                      <li class="burger-menu__item burger-menu__item_root"><a class="burger-menu__link" href="#">FAQ</a>
+                                  <ul class="burger-menu__list">
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Child policy</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Cancel tickets</a>
+                                    </li>
+                                  </ul>
+                      </li>
+                      <li class="burger-menu__item burger-menu__item_root"><a class="burger-menu__link" href="#">Tickets guide</a>
+                                  <ul class="burger-menu__list">
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Group travel</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Ticket types</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Child policy</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Change ticket request</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Cancel tickets</a>
+                                    </li>
+                                  </ul>
+                      </li>
+                      <li class="burger-menu__item burger-menu__item_root"><a class="burger-menu__link" href="#">Contact us</a>
+                                  <ul class="burger-menu__list">
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Child policy</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Change ticket request</a>
+                                    </li>
+                                    <li class="burger-menu__item burger-menu__item_subitem"><a class="burger-menu__link" href="#">Cancel tickets</a>
+                                    </li>
+                                  </ul>
+                      </li>
+                    </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?types=(cities)&amp;libraries=places&amp;language=en&amp;key=AIzaSyDhFcnUgNKcBjCyObb4NL1UwHkEl94CzXs"></script>
+    <script src="assets/scripts/air-datepicker-master/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
