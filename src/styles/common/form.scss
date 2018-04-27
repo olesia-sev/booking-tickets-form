@@ -3,6 +3,10 @@
     margin: 0 auto;
     padding-bottom: 55px;
 
+    span:not(.form__example-city) {
+        display: block;
+    }
+
     &__arrows {
         width: 30px;
         height: 16px;
@@ -45,6 +49,7 @@
     }
 
     &__example-city {
+        display: inline-block;
         border-bottom: 1px dashed #fff;
         opacity: .5;
         transition: .3s;

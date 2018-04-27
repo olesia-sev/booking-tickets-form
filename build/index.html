@@ -80,42 +80,23 @@
               <h1 class="form__title">Russian Train Tickets</h1>
             </div>
             <div class="form__row form__row--first">
-              <label class="form__label" for="departure-city">
-                <div class="form__text">Departure city:</div>
-                <input class="form__input js-autocomplete" id="departure-city" type="text" placeholder="Type city name" name="departure city"/>
-                <div class="form__example">
-                  <p>Ex:&nbsp;<span class="form__example-city js-fast-input" data-value="St. Petersburg" data-target="#departure-city">St. Petersburg,&nbsp;</span><span class="form__example-city js-fast-input" data-value="Moscow" data-target="#departure-city">Moscow</span></p>
-                </div>
+              <label class="form__label" for="departure-city"><span class="form__text">Departure city:</span>
+                <input class="form__input js-autocomplete" id="departure-city" type="text" placeholder="Type city name" name="departure city"/><span class="form__example"><span>Ex:&nbsp;<span class="form__example-city js-fast-input" data-value="St. Petersburg" data-target="#departure-city">St. Petersburg,&nbsp;</span><span class="form__example-city js-fast-input" data-value="Moscow" data-target="#departure-city">Moscow</span></span></span>
               </label>
               <div class="form__arrows js-form__arrows" role="button" aria-label="Switch" title="Switch"></div>
-              <label class="form__label" for="arrival-city">
-                <div class="form__text">Arrival city:</div>
-                <input class="form__input js-autocomplete" id="arrival-city" type="text" placeholder="Type city name" name="arrival city"/>
-                <div class="form__example">
-                  <p>Ex:&nbsp;<span class="form__example-city js-fast-input" role="button" aria-label="Fast input" data-value="St. Petersburg" data-target="#arrival-city">St. Petersburg,&nbsp;</span><span class="form__example-city js-fast-input" role="button" aria-label="Fast input" data-value="Moscow" data-target="#arrival-city">Moscow</span></p>
-                </div>
+              <label class="form__label" for="arrival-city"><span class="form__text">Arrival city:</span>
+                <input class="form__input js-autocomplete" id="arrival-city" type="text" placeholder="Type city name" name="arrival city"/><span class="form__example"><span>Ex:&nbsp;<span class="form__example-city js-fast-input" role="button" aria-label="Fast input" data-value="St. Petersburg" data-target="#arrival-city">St. Petersburg,&nbsp;</span><span class="form__example-city js-fast-input" role="button" aria-label="Fast input" data-value="Moscow" data-target="#arrival-city">Moscow</span></span></span>
               </label>
             </div>
             <div class="form__row form__row--second">
-              <label class="form__label" for="departure-date">
-                <div class="form__text">Departure date:</div>
-                <div class="form__input-wrap">
-                  <input class="form__input form__input--date js-datepicker-here" id="departure-date" type="text" placeholder="dd.mm.yyyy" readonly="readonly"/>
-                </div>
-              </label>
+              <label class="form__label" for="departure-date"><span class="form__text">Departure date:</span><span class="form__input-wrap">
+                  <input class="form__input form__input--date js-datepicker-here" id="departure-date" type="text" placeholder="dd.mm.yyyy" readonly="readonly"/></span></label>
               <label class="form__label form__label-checkbox" for="roundtrip">
-                <input class="form__input-checkbox" id="roundtrip" type="checkbox"/>
-                <div class="form__input-checkbox--fake js-roundtrip"></div>
-                <div class="form__text-inner js-roundtrip">Roundtrip</div>
+                <input class="form__input-checkbox" id="roundtrip" type="checkbox"/><span class="form__input-checkbox--fake js-roundtrip"></span><span class="form__text-inner js-roundtrip">Roundtrip</span>
               </label>
-              <label class="form__label" for="return-date">
-                <div class="form__text">Return date:</div>
-                <div class="form__input-wrap">
-                  <input class="form__input form__input--date inactive js-datepicker-here" id="return-date" type="text" placeholder="dd.mm.yyyy" readonly="readonly" disabled="disabled"/>
-                </div>
-              </label>
-              <label class="form__label" for="currency">
-                <div class="form__text">Currency</div>
+              <label class="form__label" for="return-date"><span class="form__text">Return date:</span><span class="form__input-wrap">
+                  <input class="form__input form__input--date inactive js-datepicker-here" id="return-date" type="text" placeholder="dd.mm.yyyy" readonly="readonly" disabled="disabled"/></span></label>
+              <label class="form__label" for="currency"><span class="form__text">Currency</span>
                 <select class="form__select js-select" id="currency" name="currency">
                   <option value="USD">USD</option>
                   <option value="RUB" selected="selected">RUB</option>

@@ -3,35 +3,35 @@ form.form
         h1.form__title Russian Train Tickets
     .form__row.form__row--first
         label.form__label(for='departure-city')
-            .form__text Departure city:
+            span.form__text Departure city:
             input.form__input.js-autocomplete(id='departure-city' type='text', placeholder='Type city name', name='departure city')
-            .form__example
-                p Ex:&nbsp;
+            span.form__example
+                span Ex:&nbsp;
                     span.form__example-city.js-fast-input(data-value='St. Petersburg', data-target='#departure-city') St. Petersburg,&nbsp;
                     span.form__example-city.js-fast-input(data-value='Moscow', data-target='#departure-city') Moscow
         .form__arrows.js-form__arrows(role="button", aria-label="Switch", title="Switch")
         label.form__label(for='arrival-city')
-            .form__text Arrival city:
+            span.form__text Arrival city:
             input.form__input.js-autocomplete(id='arrival-city' type='text', placeholder='Type city name', name='arrival city')
-            .form__example
-                p Ex:&nbsp;
+            span.form__example
+                span Ex:&nbsp;
                     span.form__example-city.js-fast-input(role="button", aria-label="Fast input", data-value='St. Petersburg', data-target='#arrival-city') St. Petersburg,&nbsp;
                     span.form__example-city.js-fast-input(role="button", aria-label="Fast input", data-value='Moscow', data-target='#arrival-city') Moscow
     .form__row.form__row--second
         label.form__label(for='departure-date')
-            .form__text Departure date:
-            .form__input-wrap
+            span.form__text Departure date:
+            span.form__input-wrap
                 input.form__input.form__input--date.js-datepicker-here(id='departure-date', type='text' placeholder='dd.mm.yyyy' readonly)
         label.form__label.form__label-checkbox(for='roundtrip')
             input.form__input-checkbox(id='roundtrip', type='checkbox')
-            .form__input-checkbox--fake.js-roundtrip
-            .form__text-inner.js-roundtrip Roundtrip
+            span.form__input-checkbox--fake.js-roundtrip
+            span.form__text-inner.js-roundtrip Roundtrip
         label.form__label(for='return-date')
-            .form__text Return date:
-            .form__input-wrap
+            span.form__text Return date:
+            span.form__input-wrap
                 input.form__input.form__input--date.inactive.js-datepicker-here(id='return-date', type='text', placeholder='dd.mm.yyyy', readonly, disabled)
         label.form__label(for='currency')
-            .form__text Currency
+            span.form__text Currency
             select.form__select.js-select(id='currency', name='currency')
                 option(value='USD') USD
                 option(value='RUB' selected) RUB
